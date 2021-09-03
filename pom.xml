@@ -17,19 +17,19 @@
 
     <repositories>
         <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/Kjo28T9tbFjvTzWCq46j/</url>
+            <id>myMavenRepo</id>
+            <url>${myMavenRepoReadUrl}</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/Z6ig0hNd0735d3WD6bPd/</url>
+            <id>myMavenRepo</id>
+            <url>${myMavenRepoWriteUrl}</url>
         </repository>
         <snapshotRepository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/Z6ig0hNd0735d3WD6bPd/</url>
+            <id>myMavenRepo</id>
+            <url>${myMavenRepoWriteUrl}</url>
         </snapshotRepository>
     </distributionManagement>
 
