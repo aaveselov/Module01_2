@@ -1,5 +1,6 @@
 public class Module01 {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String STR = System.getenv().getOrDefault("STR", "");
+        System.out.println("Hello " + STR);
     }
 }
