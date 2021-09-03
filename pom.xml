@@ -14,15 +14,6 @@
 <!--        <jar.finalName>${RELEASE_TAG}</jar.finalName>-->
     </properties>
 
-    <profiles>
-        <profile>
-            <id>firstProfile</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </profiles>
-
 
     <repositories>
         <repository>
