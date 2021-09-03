@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>veselov</groupId>
     <artifactId>Module01</artifactId>
     <version>${RELEASE_TAG}</version>
 
@@ -14,6 +14,32 @@
 <!--        <jar.finalName>${RELEASE_TAG}</jar.finalName>-->
     </properties>
 
+    <profiles>
+        <profile>
+            <id>firstProfile</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
+
+    <repositories>
+        <repository>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/Kjo28T9tbFjvTzWCq46j/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/Z6ig0hNd0735d3WD6bPd/</url>
+        </repository>
+        <snapshotRepository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/Z6ig0hNd0735d3WD6bPd/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
